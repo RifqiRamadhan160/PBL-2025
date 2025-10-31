@@ -1,95 +1,180 @@
-body {
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  background-color: #fff; /* warna latar halaman */
-  color: #000;
+
+* {
   margin: 0;
-  padding: 20px;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
 }
+
 
 .container {
-  background-color: #fff;
-  border: 1px solid #000;
-  padding: 50px;
-  max-width: 8000px;
-  margin: auto;
+  width: 90%;
+  max-width: 1100px;
+  margin: 30px auto;
+  background-color: #fdfdfd;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.1);
+  overflow: hidden;
 }
 
-.judul {
-  background-color: aqua;
-  text-align: center;
-  padding: 10px;
+
+nav {
+  background-color: #2c3e50;
+  padding: 12px 0;
+  position: sticky;
+  top: 0;
+  z-index: 100;
 }
 
-h2 {
-  margin-top: 30px;
-  color: #000;
-  display: inline-block;
-  padding-bottom: 10px;
-}
-
-.informasi {
-  width: 100%;  
-  border-collapse: collapse;
+nav ul {
   display: flex;
-  align-items: flex-start;
-  margin-top: 10px;
-  padding: auto;
-  vertical-align: top;
+  justify-content: center;
+  list-style: none;
+}
+
+nav ul li {
+  margin: 0 20px;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+nav ul li a:hover {
+  color: #1abc9c;
+}
+
+
+.profil {
+  padding: 25px;
+  text-align: center;
+  background-color: #f9f9f9;
+  border-bottom: 2px solid #eee;
+}
+
+.profil h1 {
+  color: #2c3e50;
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.profil h2 {
+  color: #34495e;
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+.profil-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 25px;
 }
 
 .foto {
-  width: 150px;
-  height: auto;
-  margin-right: 20px;
-  border: 1px solid #aaa;
+  width: 160px;
+  height: 200px;
+  border-radius: 8px;
+  object-fit: cover;
+  border: 2px solid #ccc;
 }
 
-.data p {
-  margin: 4px 0;
+.tabel-informasi {
+  border-collapse: collapse;
+  width: 300px;
+  font-size: 15px;
 }
 
-ul {
-  list-style-type: disc;
-  margin-left: 30px;
+.tabel-informasi td {
+  padding: 5px 8px;
+  text-align: left;
 }
 
-a {
-  color: blue;
+.tabel-informasi a {
+  color: #2980b9;
   text-decoration: none;
 }
 
-a:hover {
+.tabel-informasi a:hover {
   text-decoration: underline;
 }
 
+
+.informasi {
+  padding: 25px;
+  overflow-x: auto;
+}
+
+.informasi h2 {
+  margin-bottom: 15px;
+  color: #2c3e50;
+}
+
+.informasi table {
+  width: 100%;
+  border-collapse: collapse;
+  min-width: 400px;
+}
+
+.informasi th, .informasi td {
+  border: 1px solid #ccc;
+  padding: 8px 10px;
+  text-align: left;
+}
+
+.informasi th {
+  background-color: #2c3e50;
+  color: #fff;
+}
+
+
 .section {
-  display: flex;           
+  display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
-  align-items: flex-start;
+  padding: 25px;
+  gap: 25px;
 }
 
 .pendidikan {
-  width: 70%;              
+  flex: 1;
+  min-width: 55%;
+  background-color: #f5f7fa;
+  padding: 20px;
+  border-radius: 8px;
+  overflow-y: auto;
+  max-height: 350px;
 }
 
 .sidebar {
-  width: 35%;              
+  flex: 1;
+  min-width: 35%;
+  background-color: #eef2f3;
+  padding: 20px;
+  border-radius: 8px;
+  overflow-y: auto;
+  max-height: 350px;
 }
 
-.sidebar h3 {
-  margin-top: 10;
+.pendidikan h2, .sidebar h2 {
+  margin-bottom: 10px;
+  color: #2c3e50;
+}
+
+h3 {
+  margin-top: 15px;
+  color: #34495e;
 }
 
 ul {
-  margin: 30;
-  padding-left: 20px;
+  list-style-type: square;
+  margin-top: 5px;
+  margin-left: 20px;
 }
 
-.biodata {
-    margin-top: 30px ;
-}
-
-.biodata table {
-    width: 100%;
-    border-collapse: collapse;
+ul li {
+  margin-bottom: 6px;
 }
